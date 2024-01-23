@@ -1,0 +1,3 @@
+<div>
+  Business profile
+</div>

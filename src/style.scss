@@ -1,0 +1,64 @@
+@use "sass:math";
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap');
+
+$baseFontSize: 16px;
+
+$c-primary: '#FF5762';
+$c-primary-light: '#FFC2C2';
+$c-secondary: '#415DE8';
+$c-secondary-light: '#F5F8FF';
+$c-black: '#222B55';
+$c-grey: '#7B829A';
+
+@function stripUnit($value) {
+  @return math.div($value, ($value * 0 + 1));
+}
+
+@function r($pxValue) {
+  @return #{math.div($pxValue, stripUnit($baseFontSize))}rem;
+}
+
+:root {
+  font-size: $baseFontSize;
+}
+
+.f-lato {
+  font-family: 'Lato', sans-serif;
+}
+
+.f-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.f12 {
+  font-size: r(12);
+}
+
+.f14 {
+  font-size: r(14);
+}
+
+.f16 {
+  font-size: r(16);
+}
+
+.f18 {
+  font-size: r(18);
+}
+
+.f20 {
+  font-size: r(20);
+}
+
+.f24 {
+  font-size: r(24);
+}
+
+.f28 {
+  font-size: r(28);
+}
+
+.f36 {
+  font-size: r(36);
+}
