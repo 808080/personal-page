@@ -10,4 +10,10 @@
   .btn {
     border-radius: r(8);
   }
+
+  .upgrade {
+    &::before {
+      content: url("../assets/images/rocket.png");
+    }
+  }
 </style>
