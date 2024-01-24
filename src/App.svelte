@@ -1,10 +1,10 @@
 <script lang="ts">
-  import Router, { link } from "svelte-spa-router";
-  import active from "svelte-spa-router/active";
+  import Router, { link } from 'svelte-spa-router';
+  import active from 'svelte-spa-router/active';
 
-  import routes from "./utils/routes";
-  import Header from "./components/Header.svelte";
-  import company from "./utils/companyStore";
+  import routes from './utils/routes';
+  import Header from './components/Header.svelte';
+  import company from './utils/companyStore';
 </script>
 
 <main>

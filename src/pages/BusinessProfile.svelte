@@ -1,3 +1,1 @@
-<div>
-  Business profile
-</div>
+<div>Business profile</div>
