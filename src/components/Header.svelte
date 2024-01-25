@@ -1,23 +1,22 @@
 <script lang="ts">
   import { link, push } from 'svelte-spa-router';
 
-  import Logo from '../assets/images/logo.svg';
   import Button from './Button.svelte';
   import company, { companies } from '../utils/companyStore';
   import Select from './Select.svelte';
 </script>
 
 <header class="header container d-flex">
-  <div class="logo">
-    <img class="logo__img" src={Logo} alt="logo" />
-  </div>
+  <a href="/" class="logo f20" use:link>
+    <h3>Logo</h3>
+  </a>
 
   <nav class="nav d-flex">
     <a class="nav__link f18" href="/#" use:link>Money</a>
     <a class="nav__link f18" href="/team" use:link>Team</a>
     <a class="nav__link f18" href="/#" use:link>Cards</a>
     <a class="nav__link f18" href="/#" use:link>Help center</a>
-    <a class="nav__link f18" href="/#" use:link>Invite your partners</a>
+    <a class="nav__link f18 present" href="/#" use:link>Invite your partners</a>
   </nav>
 
   <div class="account d-flex">
@@ -44,15 +43,19 @@
   }
 
   .logo {
-    margin-inline-end: 10%;
+    width: 100%;
+    max-width: r(165);
+    text-decoration: none;
+    color: $c-primary;
+    font-weight: 700;
   }
 
   .nav {
-    // margin-inline-start: r(100);
     &__link {
       color: $c-black;
       padding-inline: r(20);
       line-height: 1;
+      white-space: nowrap;
 
       &:not(:hover) {
         text-decoration: none;
@@ -76,6 +79,20 @@
         border-radius: r(12);
         text-transform: uppercase;
       }
+    }
+  }
+
+  .present {
+    &::before {
+      content: '';
+      background-image: url('../assets/images/wrapped-present.png');
+      display: inline-block;
+      vertical-align: middle;
+      width: r(24);
+      height: r(24);
+      background-size: contain;
+      margin-inline-end: r(8);
+      background-repeat: no-repeat;
     }
   }
 </style>

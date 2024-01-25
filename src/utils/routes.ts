@@ -13,7 +13,7 @@ const routes = {
   '/invoicing': EInvoicing,
   '/plans': PlanAndLimits,
   '/team': Team,
-  '/': Profile,
+  '*': Profile,
 };
 
 export default routes;
