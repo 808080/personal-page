@@ -1,1 +1,3 @@
-<div>Business profile</div>
+<div class="card">Business profile</div>
+
+<style lang="scss"></style>

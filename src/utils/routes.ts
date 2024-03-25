@@ -1,4 +1,3 @@
-import Profile from '../pages/Profile.svelte';
 import BusinessProfile from '../pages/BusinessProfile.svelte';
 import EInvoicing from '../pages/EInvoicing.svelte';
 import PlanAndLimits from '../pages/PlanAndLimits.svelte';
@@ -13,7 +12,7 @@ const routes = {
   '/invoicing': EInvoicing,
   '/plans': PlanAndLimits,
   '/team': Team,
-  '*': Profile,
+  '*': PlanAndLimits,
 };
 
 export default routes;

@@ -101,4 +101,13 @@
       position: relative;
     }
   }
+
+  .item-hover {
+    border-inline-start: solid 4px transparent;
+    transition: border-color 0.2s;
+
+    &:hover {
+      border-inline-start-color: $c-primary;
+    }
+  }
 </style>

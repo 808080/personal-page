@@ -1,1 +1,3 @@
-<div>Team</div>
+<div class="card">Team</div>
+
+<style lang="scss"></style>

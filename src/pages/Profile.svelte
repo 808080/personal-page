@@ -1,5 +1,3 @@
-<script lang="ts">
-  $$props;
-</script>
+<div class="card">Profile</div>
 
-<div>Profile</div>
+<style lang="scss"></style>

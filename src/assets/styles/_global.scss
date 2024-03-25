@@ -6,6 +6,7 @@
   font-size: $baseFontSize;
   font-family: 'lato', sans-serif;
   background-color: $c-bg;
+  color: $c-black;
 }
 
 :global(body) {
@@ -75,11 +76,10 @@ button {
   cursor: pointer;
 }
 
-.item-hover {
-  border-inline-start: solid 4px transparent;
-  transition: border-color 0.2s;
-
-  &:hover {
-    border-inline-start-color: $c-primary;
-  }
+.card {
+  border-radius: r(16);
+  background-color: #fff;
+  padding: r(40) r(60);
+  box-shadow: 0 1px 3px rgba(#222B55, 0.03), 0 8px 12px rgba(#343546, 0.02);
+  margin-bottom: r(32);
 }

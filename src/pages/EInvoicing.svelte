@@ -1,1 +1,3 @@
-<div>E-invoicing</div>
+<div class="card">E-invoicing</div>
+
+<style lang="scss"></style>
